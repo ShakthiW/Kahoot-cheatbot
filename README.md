@@ -1,6 +1,6 @@
 # Project Name
 
-Brief description of your project - what it does and its main purpose.
+This is a project that i did just for the fun of it. You can use this to solve any quetsion on your computer screen with just some hot keys here its `q`
 
 ## Features
 
