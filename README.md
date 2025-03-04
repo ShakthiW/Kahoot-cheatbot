@@ -10,8 +10,8 @@ This is a project that i did just for the fun of it. You can use this to solve a
 
 ## Prerequisites
 
-- Python 3.x
-- Other dependencies
+- Python 3.12 (This is what I used)
+- Other dependencies can be found in the `requirements.txt` file
 
 ## Installation
 
