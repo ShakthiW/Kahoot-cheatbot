@@ -56,7 +56,7 @@ python main.py
 ```
 
 ## Project Structure
-
+```
 project-name/
 ├── README.md
 ├── requirements.txt
@@ -64,6 +64,7 @@ project-name/
 ├── .env
 └── src/
 └── main.py
+```
 
 ## Contributing
 
