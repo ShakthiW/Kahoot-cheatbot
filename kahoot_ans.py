@@ -113,7 +113,7 @@ class QuizAnalyzer:
                         }
                     ],
                     max_tokens=200,
-                    temperature=0.3
+                    temperature=1
                 )
                 return response.choices[0].message.content.strip()
             
@@ -122,13 +122,17 @@ class QuizAnalyzer:
             base64_image = self.encode_image(image_path)
             if not base64_image:
                 return None
+            
+            prompt = """You are a quiz assistant. 
+                Quickly identify the question and options, and provide the most likely answer. 
+                Be very concise. If you didnt get the answer in the text don't provide an answer based on the prompt just give the correct answer."""
 
             response = self.client.chat.completions.create(
                 model=self.model,
                 messages=[
                     {
                         "role": "system",
-                        "content": "You are a quiz assistant. Quickly identify the question and options, and provide the most likely answer. Be very concise."
+                        "content": prompt
                     },
                     {
                         "role": "user",
@@ -147,7 +151,7 @@ class QuizAnalyzer:
                     }
                 ],
                 max_tokens=300,
-                temperature=0.3
+                temperature=0
             )
             return response.choices[0].message.content.strip()
         except Exception as e:
