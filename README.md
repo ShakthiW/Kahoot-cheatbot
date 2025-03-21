@@ -1,6 +1,6 @@
 # Project Name
 
-Brief description of your project - what it does and its main purpose.
+This is a project that i did just for the fun of it. You can use this to solve any quetsion on your computer screen with just some hot keys here its `q`
 
 ## Features
 
@@ -10,8 +10,8 @@ Brief description of your project - what it does and its main purpose.
 
 ## Prerequisites
 
-- Python 3.x
-- Other dependencies
+- Python 3.12 (This is what I used)
+- Other dependencies can be found in the `requirements.txt` file
 
 ## Installation
 
@@ -56,7 +56,7 @@ python main.py
 ```
 
 ## Project Structure
-
+```
 project-name/
 ├── README.md
 ├── requirements.txt
@@ -64,6 +64,7 @@ project-name/
 ├── .env
 └── src/
 └── main.py
+```
 
 ## Contributing
 
